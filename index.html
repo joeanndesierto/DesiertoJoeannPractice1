@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DesiertoJoeannPractice1</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <form id="eventForm">
+        <fieldset>
+            <legend>Create a New Event</legend>
+            <br>
+			<label>Event Type: </label> 
+            <select id="type" name="type" required>
+                <option value="" disabled selected>Choose one</option>
+                <option value="seminar" >Seminar</option>
+                <option value="party" >Party</option>
+                <option value="show" >Conference</option>
+            </select> <br> <br>
+
+            <label>Event Title: </label> 
+            <input type = "text" name = "eventName" id = "eventName" required> <br> <br>
+
+            <label>Event Dates: </label> 
+            <input type="date" id="eventDate1" name="eventDate1" required> 
+            <label id="to"> to </label>
+            <input type="date" id="eventDate2" name="eventDate2" required> <br> <br>
+
+            <label>Posting Date: </label> 
+            <input type="date" id="postingDate" name="postingDate" required> <br> <br>
+
+            <input type="checkbox" id="cb1" name="cb1" value="ch1">
+            <label id="lcb1" for="ch1"> Is Registration Required?</label><br>
+            <input type="checkbox" id="cb2" name="cb2" value="ch2">
+            <label id="lcb2" for="ch2"> Is this event associated with any Family Programs?</label><br>
+            <input type="checkbox" id="cb3" name="cb3" value="ch3">
+            <label id="lcb3" for="ch3"> Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label><br>
+            <input type="checkbox" id="cb4" name="cb4" value="ch4">
+            <label id="lcb4" for="ch4"> Is There a Point of Contract?</label><br>
+            <input type="checkbox" id="cb5" name="cb5" value="ch5">
+            <label id="lcb5" for="ch5"> Is There a Hosting Command Point of Contact?</label><br> <br> <br>
+            <div>
+                <input id="saveB" type = "submit" value = "Save" onclick="save()"> &nbsp;
+                <input id="cancelB" type = "submit" value = "Cancel" onclick="cancel()">
+            </div>
+		</fieldset>
+    </form>
+</body>
+</html>
